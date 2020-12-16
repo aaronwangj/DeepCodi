@@ -1,0 +1,114 @@
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+vgg16 (Model)                (None, 7, 7, 512)         14714688  
+_________________________________________________________________
+flatten (Flatten)            (None, 25088)             0         
+_________________________________________________________________
+dropout (Dropout)            (None, 25088)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1)                 25089     
+=================================================================
+Total params: 14,739,777
+Trainable params: 25,089
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+Found 3100 images belonging to 2 classes.
+
+ 1/96 [..............................] - ETA: 18:00 - loss: 1.2646e-05 - accuracy: 1.0000 - sensitivity: 1.0000 - specificity: 1.0000 - precision: 1.0000 - dice_coef: 0.9998
+ 2/96 [..............................] - ETA: 16:40 - loss: 9.7375e-06 - accuracy: 1.0000 - sensitivity: 1.0000 - specificity: 1.0000 - precision: 1.0000 - dice_coef: 0.9999
+ 3/96 [..............................] - ETA: 15:31 - loss: 0.0410 - accuracy: 0.9896 - sensitivity: 0.6667 - specificity: 0.9896 - precision: 0.6667 - dice_coef: 0.6666    
+ 4/96 [>.............................] - ETA: 14:58 - loss: 0.2619 - accuracy: 0.9688 - sensitivity: 0.7500 - specificity: 0.9680 - precision: 0.7500 - dice_coef: 0.5868
+ 5/96 [>.............................] - ETA: 14:30 - loss: 0.2385 - accuracy: 0.9688 - sensitivity: 0.8000 - specificity: 0.9679 - precision: 0.8000 - dice_coef: 0.6031
+ 6/96 [>.............................] - ETA: 14:11 - loss: 0.2153 - accuracy: 0.9688 - sensitivity: 0.8333 - specificity: 0.9679 - precision: 0.8333 - dice_coef: 0.6148
+ 7/96 [=>............................] - ETA: 13:53 - loss: 0.1870 - accuracy: 0.9732 - sensitivity: 0.7143 - specificity: 0.9725 - precision: 0.7143 - dice_coef: 0.5270
+ 8/96 [=>............................] - ETA: 13:36 - loss: 0.1638 - accuracy: 0.9766 - sensitivity: 0.7500 - specificity: 0.9759 - precision: 0.7500 - dice_coef: 0.5831
+ 9/96 [=>............................] - ETA: 13:23 - loss: 0.1530 - accuracy: 0.9757 - sensitivity: 0.7778 - specificity: 0.9749 - precision: 0.7778 - dice_coef: 0.6092
+10/96 [==>...........................] - ETA: 13:10 - loss: 0.1377 - accuracy: 0.9781 - sensitivity: 0.7000 - specificity: 0.9774 - precision: 0.7000 - dice_coef: 0.5483
+11/96 [==>...........................] - ETA: 12:58 - loss: 0.1470 - accuracy: 0.9773 - sensitivity: 0.6364 - specificity: 0.9766 - precision: 0.6364 - dice_coef: 0.4984
+12/96 [==>...........................] - ETA: 12:46 - loss: 0.1413 - accuracy: 0.9766 - sensitivity: 0.6667 - specificity: 0.9759 - precision: 0.6667 - dice_coef: 0.5137
+13/96 [===>..........................] - ETA: 12:34 - loss: 0.1304 - accuracy: 0.9784 - sensitivity: 0.6154 - specificity: 0.9777 - precision: 0.6154 - dice_coef: 0.4742
+14/96 [===>..........................] - ETA: 12:24 - loss: 0.1340 - accuracy: 0.9777 - sensitivity: 0.5714 - specificity: 0.9771 - precision: 0.5714 - dice_coef: 0.4403
+15/96 [===>..........................] - ETA: 12:13 - loss: 0.1611 - accuracy: 0.9750 - sensitivity: 0.6000 - specificity: 0.9742 - precision: 0.6000 - dice_coef: 0.4551
+16/96 [====>.........................] - ETA: 12:03 - loss: 0.1510 - accuracy: 0.9766 - sensitivity: 0.5625 - specificity: 0.9758 - precision: 0.5625 - dice_coef: 0.4267
+17/96 [====>.........................] - ETA: 11:53 - loss: 0.1556 - accuracy: 0.9743 - sensitivity: 0.5882 - specificity: 0.9734 - precision: 0.5882 - dice_coef: 0.4321
+18/96 [====>.........................] - ETA: 11:45 - loss: 0.1526 - accuracy: 0.9722 - sensitivity: 0.5556 - specificity: 0.9714 - precision: 0.5556 - dice_coef: 0.4081
+19/96 [====>.........................] - ETA: 11:45 - loss: 0.1446 - accuracy: 0.9737 - sensitivity: 0.5789 - specificity: 0.9729 - precision: 0.5789 - dice_coef: 0.4392
+20/96 [=====>........................] - ETA: 11:38 - loss: 0.1524 - accuracy: 0.9734 - sensitivity: 0.6000 - specificity: 0.9726 - precision: 0.6000 - dice_coef: 0.4573
+21/96 [=====>........................] - ETA: 11:29 - loss: 0.1451 - accuracy: 0.9747 - sensitivity: 0.5714 - specificity: 0.9739 - precision: 0.5714 - dice_coef: 0.4355
+22/96 [=====>........................] - ETA: 11:20 - loss: 0.1544 - accuracy: 0.9744 - sensitivity: 0.5455 - specificity: 0.9737 - precision: 0.5455 - dice_coef: 0.4157
+23/96 [======>.......................] - ETA: 11:11 - loss: 0.1531 - accuracy: 0.9742 - sensitivity: 0.5652 - specificity: 0.9733 - precision: 0.5652 - dice_coef: 0.4346
+24/96 [======>.......................] - ETA: 11:04 - loss: 0.1607 - accuracy: 0.9727 - sensitivity: 0.5833 - specificity: 0.9718 - precision: 0.5833 - dice_coef: 0.4399
+25/96 [======>.......................] - ETA: 10:54 - loss: 0.1542 - accuracy: 0.9737 - sensitivity: 0.5600 - specificity: 0.9729 - precision: 0.5600 - dice_coef: 0.4223
+26/96 [=======>......................] - ETA: 10:48 - loss: 0.1484 - accuracy: 0.9748 - sensitivity: 0.5385 - specificity: 0.9739 - precision: 0.5385 - dice_coef: 0.4061
+27/96 [=======>......................] - ETA: 10:38 - loss: 0.1430 - accuracy: 0.9757 - sensitivity: 0.5185 - specificity: 0.9749 - precision: 0.5185 - dice_coef: 0.3910
+28/96 [=======>......................] - ETA: 10:28 - loss: 0.1614 - accuracy: 0.9732 - sensitivity: 0.5357 - specificity: 0.9723 - precision: 0.5357 - dice_coef: 0.3903
+29/96 [========>.....................] - ETA: 10:19 - loss: 0.1679 - accuracy: 0.9731 - sensitivity: 0.5517 - specificity: 0.9721 - precision: 0.5517 - dice_coef: 0.4044
+30/96 [========>.....................] - ETA: 10:09 - loss: 0.1649 - accuracy: 0.9729 - sensitivity: 0.5333 - specificity: 0.9720 - precision: 0.5333 - dice_coef: 0.3909
+31/96 [========>.....................] - ETA: 10:00 - loss: 0.1736 - accuracy: 0.9728 - sensitivity: 0.5484 - specificity: 0.9718 - precision: 0.5484 - dice_coef: 0.4051
+32/96 [=========>....................] - ETA: 9:50 - loss: 0.1685 - accuracy: 0.9736 - sensitivity: 0.5625 - specificity: 0.9727 - precision: 0.5625 - dice_coef: 0.4192 
+33/96 [=========>....................] - ETA: 9:41 - loss: 0.1657 - accuracy: 0.9735 - sensitivity: 0.5455 - specificity: 0.9726 - precision: 0.5455 - dice_coef: 0.4065
+34/96 [=========>....................] - ETA: 9:32 - loss: 0.1621 - accuracy: 0.9733 - sensitivity: 0.5515 - specificity: 0.9734 - precision: 0.5515 - dice_coef: 0.4207
+35/96 [=========>....................] - ETA: 9:22 - loss: 0.1593 - accuracy: 0.9732 - sensitivity: 0.5357 - specificity: 0.9733 - precision: 0.5357 - dice_coef: 0.4086
+36/96 [==========>...................] - ETA: 9:13 - loss: 0.1671 - accuracy: 0.9731 - sensitivity: 0.5347 - specificity: 0.9740 - precision: 0.5347 - dice_coef: 0.4157
+37/96 [==========>...................] - ETA: 9:04 - loss: 0.1890 - accuracy: 0.9713 - sensitivity: 0.5203 - specificity: 0.9730 - precision: 0.5203 - dice_coef: 0.4097
+38/96 [==========>...................] - ETA: 8:54 - loss: 0.1841 - accuracy: 0.9720 - sensitivity: 0.5066 - specificity: 0.9737 - precision: 0.5066 - dice_coef: 0.3989
+39/96 [===========>..................] - ETA: 8:45 - loss: 0.1793 - accuracy: 0.9728 - sensitivity: 0.5192 - specificity: 0.9743 - precision: 0.5192 - dice_coef: 0.4143
+40/96 [===========>..................] - ETA: 8:35 - loss: 0.1790 - accuracy: 0.9727 - sensitivity: 0.5312 - specificity: 0.9741 - precision: 0.5312 - dice_coef: 0.4239
+41/96 [===========>..................] - ETA: 8:26 - loss: 0.1812 - accuracy: 0.9726 - sensitivity: 0.5427 - specificity: 0.9740 - precision: 0.5427 - dice_coef: 0.4329
+42/96 [============>.................] - ETA: 8:17 - loss: 0.1770 - accuracy: 0.9732 - sensitivity: 0.5536 - specificity: 0.9746 - precision: 0.5536 - dice_coef: 0.4455
+43/96 [============>.................] - ETA: 8:07 - loss: 0.1823 - accuracy: 0.9724 - sensitivity: 0.5407 - specificity: 0.9744 - precision: 0.5407 - dice_coef: 0.4409
+44/96 [============>.................] - ETA: 7:58 - loss: 0.1782 - accuracy: 0.9730 - sensitivity: 0.5284 - specificity: 0.9750 - precision: 0.5284 - dice_coef: 0.4308
+45/96 [=============>................] - ETA: 7:49 - loss: 0.1788 - accuracy: 0.9729 - sensitivity: 0.5167 - specificity: 0.9749 - precision: 0.5167 - dice_coef: 0.4213
+46/96 [=============>................] - ETA: 7:39 - loss: 0.1940 - accuracy: 0.9715 - sensitivity: 0.5272 - specificity: 0.9733 - precision: 0.5272 - dice_coef: 0.4208
+47/96 [=============>................] - ETA: 7:30 - loss: 0.1981 - accuracy: 0.9714 - sensitivity: 0.5160 - specificity: 0.9739 - precision: 0.5160 - dice_coef: 0.4119
+48/96 [==============>...............] - ETA: 7:21 - loss: 0.1970 - accuracy: 0.9714 - sensitivity: 0.5156 - specificity: 0.9744 - precision: 0.5156 - dice_coef: 0.4173
+49/96 [==============>...............] - ETA: 7:11 - loss: 0.1930 - accuracy: 0.9719 - sensitivity: 0.5255 - specificity: 0.9749 - precision: 0.5255 - dice_coef: 0.4291
+50/96 [==============>...............] - ETA: 7:02 - loss: 0.1927 - accuracy: 0.9719 - sensitivity: 0.5150 - specificity: 0.9754 - precision: 0.5150 - dice_coef: 0.4207
+51/96 [==============>...............] - ETA: 6:53 - loss: 0.1939 - accuracy: 0.9718 - sensitivity: 0.5049 - specificity: 0.9753 - precision: 0.5049 - dice_coef: 0.4124
+52/96 [===============>..............] - ETA: 6:44 - loss: 0.1902 - accuracy: 0.9724 - sensitivity: 0.5144 - specificity: 0.9758 - precision: 0.5144 - dice_coef: 0.4230
+53/96 [===============>..............] - ETA: 6:34 - loss: 0.1873 - accuracy: 0.9723 - sensitivity: 0.5047 - specificity: 0.9757 - precision: 0.5047 - dice_coef: 0.4150
+54/96 [===============>..............] - ETA: 6:25 - loss: 0.1928 - accuracy: 0.9722 - sensitivity: 0.4954 - specificity: 0.9755 - precision: 0.4954 - dice_coef: 0.4073
+55/96 [================>.............] - ETA: 6:16 - loss: 0.1893 - accuracy: 0.9727 - sensitivity: 0.5045 - specificity: 0.9760 - precision: 0.5045 - dice_coef: 0.4181
+56/96 [================>.............] - ETA: 6:07 - loss: 0.1870 - accuracy: 0.9727 - sensitivity: 0.4955 - specificity: 0.9758 - precision: 0.4955 - dice_coef: 0.4106
+57/96 [================>.............] - ETA: 5:58 - loss: 0.1842 - accuracy: 0.9726 - sensitivity: 0.5044 - specificity: 0.9757 - precision: 0.5044 - dice_coef: 0.4169
+58/96 [=================>............] - ETA: 5:48 - loss: 0.1831 - accuracy: 0.9714 - sensitivity: 0.5014 - specificity: 0.9755 - precision: 0.5014 - dice_coef: 0.4204
+59/96 [=================>............] - ETA: 5:39 - loss: 0.1827 - accuracy: 0.9714 - sensitivity: 0.5099 - specificity: 0.9754 - precision: 0.5099 - dice_coef: 0.4246
+60/96 [=================>............] - ETA: 5:30 - loss: 0.1805 - accuracy: 0.9714 - sensitivity: 0.5014 - specificity: 0.9758 - precision: 0.5014 - dice_coef: 0.4236
+61/96 [==================>...........] - ETA: 5:21 - loss: 0.1779 - accuracy: 0.9713 - sensitivity: 0.5096 - specificity: 0.9757 - precision: 0.5096 - dice_coef: 0.4297
+62/96 [==================>...........] - ETA: 5:12 - loss: 0.1755 - accuracy: 0.9713 - sensitivity: 0.5175 - specificity: 0.9755 - precision: 0.5175 - dice_coef: 0.4368
+63/96 [==================>...........] - ETA: 5:04 - loss: 0.1727 - accuracy: 0.9717 - sensitivity: 0.5251 - specificity: 0.9759 - precision: 0.5251 - dice_coef: 0.4450
+64/96 [===================>..........] - ETA: 4:55 - loss: 0.1701 - accuracy: 0.9722 - sensitivity: 0.5326 - specificity: 0.9763 - precision: 0.5326 - dice_coef: 0.4527
+65/96 [===================>..........] - ETA: 4:46 - loss: 0.1677 - accuracy: 0.9726 - sensitivity: 0.5244 - specificity: 0.9767 - precision: 0.5244 - dice_coef: 0.4457
+66/96 [===================>..........] - ETA: 4:37 - loss: 0.1652 - accuracy: 0.9730 - sensitivity: 0.5316 - specificity: 0.9770 - precision: 0.5316 - dice_coef: 0.4540
+67/96 [===================>..........] - ETA: 4:27 - loss: 0.1692 - accuracy: 0.9729 - sensitivity: 0.5311 - specificity: 0.9774 - precision: 0.5311 - dice_coef: 0.4564
+68/96 [====================>.........] - ETA: 4:18 - loss: 0.1678 - accuracy: 0.9729 - sensitivity: 0.5233 - specificity: 0.9772 - precision: 0.5233 - dice_coef: 0.4497
+69/96 [====================>.........] - ETA: 4:09 - loss: 0.1663 - accuracy: 0.9728 - sensitivity: 0.5157 - specificity: 0.9771 - precision: 0.5157 - dice_coef: 0.4432
+70/96 [====================>.........] - ETA: 4:01 - loss: 0.1640 - accuracy: 0.9732 - sensitivity: 0.5083 - specificity: 0.9774 - precision: 0.5083 - dice_coef: 0.4368
+71/96 [=====================>........] - ETA: 3:52 - loss: 0.1701 - accuracy: 0.9727 - sensitivity: 0.5153 - specificity: 0.9768 - precision: 0.5153 - dice_coef: 0.4371
+72/96 [=====================>........] - ETA: 3:44 - loss: 0.1678 - accuracy: 0.9731 - sensitivity: 0.5220 - specificity: 0.9772 - precision: 0.5220 - dice_coef: 0.4440
+73/96 [=====================>........] - ETA: 3:35 - loss: 0.1655 - accuracy: 0.9735 - sensitivity: 0.5285 - specificity: 0.9775 - precision: 0.5285 - dice_coef: 0.4516
+74/96 [======================>.......] - ETA: 3:26 - loss: 0.1701 - accuracy: 0.9730 - sensitivity: 0.5349 - specificity: 0.9769 - precision: 0.5349 - dice_coef: 0.4523
+75/96 [======================>.......] - ETA: 3:18 - loss: 0.1679 - accuracy: 0.9733 - sensitivity: 0.5411 - specificity: 0.9772 - precision: 0.5411 - dice_coef: 0.4582
+76/96 [======================>.......] - ETA: 3:09 - loss: 0.1670 - accuracy: 0.9729 - sensitivity: 0.5471 - specificity: 0.9766 - precision: 0.5471 - dice_coef: 0.4616
+77/96 [=======================>......] - ETA: 3:00 - loss: 0.1649 - accuracy: 0.9732 - sensitivity: 0.5530 - specificity: 0.9769 - precision: 0.5530 - dice_coef: 0.4680
+78/96 [=======================>......] - ETA: 2:51 - loss: 0.1681 - accuracy: 0.9732 - sensitivity: 0.5524 - specificity: 0.9772 - precision: 0.5524 - dice_coef: 0.4704
+79/96 [=======================>......] - ETA: 2:42 - loss: 0.1746 - accuracy: 0.9723 - sensitivity: 0.5496 - specificity: 0.9771 - precision: 0.5496 - dice_coef: 0.4693
+80/96 [========================>.....] - ETA: 2:33 - loss: 0.1782 - accuracy: 0.9723 - sensitivity: 0.5427 - specificity: 0.9770 - precision: 0.5427 - dice_coef: 0.4634
+81/96 [========================>.....] - ETA: 2:24 - loss: 0.1770 - accuracy: 0.9722 - sensitivity: 0.5360 - specificity: 0.9769 - precision: 0.5360 - dice_coef: 0.4577
+82/96 [========================>.....] - ETA: 2:14 - loss: 0.1750 - accuracy: 0.9726 - sensitivity: 0.5295 - specificity: 0.9772 - precision: 0.5295 - dice_coef: 0.4521
+83/96 [========================>.....] - ETA: 2:05 - loss: 0.1763 - accuracy: 0.9725 - sensitivity: 0.5351 - specificity: 0.9771 - precision: 0.5351 - dice_coef: 0.4543
+84/96 [=========================>....] - ETA: 1:55 - loss: 0.1794 - accuracy: 0.9725 - sensitivity: 0.5407 - specificity: 0.9769 - precision: 0.5407 - dice_coef: 0.4557
+85/96 [=========================>....] - ETA: 1:46 - loss: 0.1778 - accuracy: 0.9724 - sensitivity: 0.5461 - specificity: 0.9768 - precision: 0.5461 - dice_coef: 0.4589
+86/96 [=========================>....] - ETA: 1:37 - loss: 0.1762 - accuracy: 0.9724 - sensitivity: 0.5514 - specificity: 0.9767 - precision: 0.5514 - dice_coef: 0.4620
+87/96 [==========================>...] - ETA: 1:27 - loss: 0.1763 - accuracy: 0.9720 - sensitivity: 0.5450 - specificity: 0.9766 - precision: 0.5450 - dice_coef: 0.4568
+88/96 [==========================>...] - ETA: 1:17 - loss: 0.1767 - accuracy: 0.9719 - sensitivity: 0.5388 - specificity: 0.9765 - precision: 0.5388 - dice_coef: 0.4516
+89/96 [==========================>...] - ETA: 1:08 - loss: 0.1793 - accuracy: 0.9719 - sensitivity: 0.5384 - specificity: 0.9768 - precision: 0.5384 - dice_coef: 0.4540
+90/96 [===========================>..] - ETA: 58s - loss: 0.1777 - accuracy: 0.9719 - sensitivity: 0.5435 - specificity: 0.9767 - precision: 0.5435 - dice_coef: 0.4571 
+91/96 [===========================>..] - ETA: 48s - loss: 0.1758 - accuracy: 0.9722 - sensitivity: 0.5485 - specificity: 0.9770 - precision: 0.5485 - dice_coef: 0.4630
+92/96 [===========================>..] - ETA: 39s - loss: 0.1785 - accuracy: 0.9721 - sensitivity: 0.5426 - specificity: 0.9772 - precision: 0.5426 - dice_coef: 0.4580
+93/96 [============================>.] - ETA: 29s - loss: 0.1766 - accuracy: 0.9724 - sensitivity: 0.5475 - specificity: 0.9774 - precision: 0.5475 - dice_coef: 0.4636
+94/96 [============================>.] - ETA: 19s - loss: 0.1747 - accuracy: 0.9727 - sensitivity: 0.5523 - specificity: 0.9777 - precision: 0.5523 - dice_coef: 0.4693
+95/96 [============================>.] - ETA: 9s - loss: 0.1729 - accuracy: 0.9730 - sensitivity: 0.5465 - specificity: 0.9779 - precision: 0.5465 - dice_coef: 0.4644 
+96/96 [==============================] - 945s 10s/step - loss: 0.1771 - accuracy: 0.9720 - sensitivity: 0.5460 - specificity: 0.9771 - precision: 0.5460 - dice_coef: 0.4636
